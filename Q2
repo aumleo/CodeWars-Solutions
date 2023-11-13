@@ -1,0 +1,2 @@
+#REMOVE CHAR
+    return s[1:len(s)-1]
