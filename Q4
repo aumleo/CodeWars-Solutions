@@ -1,0 +1,4 @@
+def find_smallest_int(arr):
+    m=sorted(arr)
+    return m[0]
+        
