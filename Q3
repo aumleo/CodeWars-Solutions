@@ -1,0 +1,5 @@
+#SUMMATION OF RANGE
+    m=0
+    for i in range(num+1): #*
+        m=m+i
+    return m
