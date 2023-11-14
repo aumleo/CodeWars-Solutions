@@ -1,0 +1,13 @@
+def count_positives_sum_negatives(arr):
+    m=[]
+    n=[]
+    if arr==[]:            #case if arr is empty or null
+        return []
+    else:                  #regular case
+        for i in arr:
+            if i>0:
+                m.append(i)
+            if i<0:
+                n.append(i)
+        return [len(m), sum(n)]
+    
