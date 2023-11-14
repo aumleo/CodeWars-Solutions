@@ -1,0 +1,4 @@
+def maps(a):
+    for i in range(len(a)):     #access length of list + set range 0-len .'.i=0,1,2....len(list)
+        a[i]=a[i]*2             #calling element at index i and multiplying by 2 (for each element in list)
+    return a
