@@ -1,0 +1,8 @@
+def get_count(s):
+    l=['a','e','i','o','u']
+    m=list(s)
+    n=[]
+    for i in m:
+        if i in l:
+            n.append(i)
+    return len(n)
