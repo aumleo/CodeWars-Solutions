@@ -6,3 +6,7 @@ def get_count(s):
         if i in l:
             n.append(i)
     return len(n)
+
+#best 
+"""def getCount(s):
+    return sum(c in 'aeiou' for c in s)"""
