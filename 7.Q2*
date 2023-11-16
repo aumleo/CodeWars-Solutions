@@ -1,0 +1,12 @@
+def disemvowel(s):
+    m=list(s)
+    n=[]
+    for c in m : 
+        if c not in ["u",'a','e','i','o','A','E','I','O','U'] :
+            n.append(c)
+    x= ''.join(map(str,n))
+    return x
+
+#BP 
+"""def disemvowel(string):
+    return "".join(c for c in string if c.lower() not in "aeiou")"""
