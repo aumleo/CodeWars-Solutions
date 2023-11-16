@@ -1,0 +1,3 @@
+def high_and_low(n):
+    a = list(map(int, n.split()))      # n is a str, we need to extract nums or ints to compare .'. remove space and convert each to int #
+    return f'{max(a)} {min(a)}'
