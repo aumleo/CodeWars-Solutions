@@ -1,0 +1,16 @@
+def accum(s):
+    m=list(s)
+    n=[]
+    x=len(m)
+    for i in range(x):
+        j=i
+        while j >= 0:
+            if j==i:
+                n.append(s[i].upper())               
+            if j==0:
+                n.append('-')
+            else:
+                n.append(s[i].lower())
+            j=j-1  
+    return ''.join(map(str,n[:-1]))
+    
