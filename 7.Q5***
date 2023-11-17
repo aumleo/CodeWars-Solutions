@@ -13,4 +13,29 @@ def accum(s):
                 n.append(s[i].lower())
             j=j-1  
     return ''.join(map(str,n[:-1]))
+
+
+################### better ######################
+
+def accum(s):
+    string = ""
+    for i in range(0,len(s)):
+        if i < (len(s)-1):
+            string = string+s[i]*(i+1)+"-"
+        else:
+            string = string+s[i]*(i+1)
+    return string.title()
+
+################### best #######################
+
+def accum(s):
+    output = ""
+    for i in range(len(s)):
+        output+=(s[i]*(i+1))+"-"
+    return output.title()[:-1]
+
+################### wth ########################
+
+def accum(s):
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
     
