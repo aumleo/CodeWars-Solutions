@@ -1,0 +1,11 @@
+def get_middle(s):
+    m=list(s)
+    c=len(m)
+    b=int(c/2)
+    
+    if c%2 == 0:
+        v=m[b-1:b+1]        
+    else:
+        v = m[b:b+1]
+    
+    return ' '.join(map(str,v)).replace(' ','')
