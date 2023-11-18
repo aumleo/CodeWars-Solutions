@@ -5,3 +5,4 @@ def filter_list(l):
         if f'{type(l[i])}' in x :
             n.append(l[i])
     return n
+
