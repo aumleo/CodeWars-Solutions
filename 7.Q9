@@ -6,4 +6,8 @@ def open_or_senior(d):
         else:
             n.append('Open')
     return n
-            
+
+###################L.comp#########################
+
+def openOrSenior(data):
+  return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
