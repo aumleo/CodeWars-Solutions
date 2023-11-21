@@ -1,0 +1,9 @@
+def open_or_senior(d):
+    n=[]
+    for i in range(len(d)):
+        if d[i][0] >= 55 and d[i][1]>7:
+            n.append('Senior')
+        else:
+            n.append('Open')
+    return n
+            
