@@ -1,0 +1,8 @@
+def spin_words(s):
+    m=list(s.split(' '))
+    n=[]
+    for i in range(len(m)):
+        if len(m[i])>=5:
+            m[i]=m[i][::-1]
+            
+    return ' '.join(map(str,m))
