@@ -1,0 +1,29 @@
+def digital_root(n):
+    j = 0
+    while n > 9:
+        for i in str(n):
+            j += int(i)
+        n = j     ######### inside the loop, store j value in n or change n = j [RECURSION PROCESS]
+        j = 0     ######### then return j back to 0 for steps to repeat same again
+    return n
+
+
+############## BEST ####################
+def digital_root(n):
+    return n if n < 10 else digital_root(sum(map(int,str(n))))      ###### [RECURSION used by calling fn again]
+
+
+########## ANOTHER APPROACH #############
+def num(n) :   
+     sum = 0   
+     for i in str(n): 
+         a = int(n) % 10    
+         sum  = sum + a 
+         n = n/10    
+     if sum < 10:    
+         return sum
+     else:
+         return num(sum)   ##### [Again fn called back i.e. RECURSION] 
+
+##### too complex and long shows error too   #####
+
