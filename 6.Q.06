@@ -1,0 +1,11 @@
+def find_outlier(n):
+    m=[]
+    for i in range(len(n)):
+        if n[i]%2!=0:
+            m.append(n[i])
+    if len(m)>1:
+        for x in n:
+            if x not in m:
+                return x
+    if len(m)==1:
+        return m[0]
