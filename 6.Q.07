@@ -1,0 +1,8 @@
+def duplicate_count(t):
+    x=t.lower()
+    n=[]
+    m=set(list(x))
+    for i in m:
+        if x.count(i)>1:
+            n.append(i)
+    return len(n) 
