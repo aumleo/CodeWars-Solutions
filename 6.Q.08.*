@@ -1,0 +1,8 @@
+def alphabet_position(t):
+    n=[]
+    m=list(t.upper().strip(' '))
+    for i in m:
+        if i.isalpha():
+            n.append(ord(i)-64)
+    
+    return ' '.join(map(str,n)
