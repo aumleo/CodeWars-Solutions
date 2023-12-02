@@ -1,0 +1,10 @@
+def persistence(n):
+    m=[]      # empty list to store change of values or value for each step of recursion
+    k=1
+    while n>9:
+        for i in str(n):
+            k=k*int(i)
+        n=k
+        k=1
+        m.append(n)       # add changing value
+    return len(m)         # times change=len
