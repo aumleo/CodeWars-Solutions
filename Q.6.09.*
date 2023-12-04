@@ -1,0 +1,13 @@
+def order(s):
+    m=list(s.split(' '))
+    n=[]
+    l=[]
+    for i in m:
+        for j in i:
+            if j.isnumeric():
+                n.append(j)
+    for x in sorted(n):
+        for c in m:
+            if x in c:
+                l.append(c)
+    return ' '.join(map(str,l))
