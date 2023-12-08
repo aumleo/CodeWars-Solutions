@@ -6,3 +6,10 @@ def tribonacci(s, n):
     for i in range(n-len(s)):
         s.append(s[i]+s[i+1]+s[i+2])
     return s
+
+########## BEST ############
+
+def tribonacci(signature, n):
+  res = signature[:n]
+  for i in range(n - 3): res.append(sum(res[-3:]))
+  return res
