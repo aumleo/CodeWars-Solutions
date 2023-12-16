@@ -1,0 +1,25 @@
+###### ACTUAL SOLn
+def unique_in_order(iterable):
+    res = []                                 #EMPTY TO LIST TO STORE VALS WHILE ITERATING
+    for item in iterable:
+        if len(res) == 0 or item != res[-1]: #PEHLE LEN 0 HAI TO PEHLA WORD APPEND, PHIR TUB SE COMPARE WORD TO THE *LAST* VALUE IN RES - IF != THEN APPEND
+            res.append(item)
+    return res
+
+
+########## MINE
+def unique_in_order(s):
+    n=list(s)
+    m=[]
+    for i in range(len(s)-1):
+        j=i+1
+        if s[i]!=s[j]:
+            m.append(s[i])
+        j=0
+    if len(s)<1:
+        return []
+    if len(s)<2:
+        m.append(s[0])
+    if len(s)>=2:
+        m.append(s[-1])
+    return (m)
