@@ -1,0 +1,21 @@
+def is_pangram(s):
+    n=[]
+    m=list(s.lower())
+    for i in m:
+        if i.isalpha():
+            n.append(i)
+    k=sorted(set(n))                     # UNNECESSARY BUT BASICALLY CREATE A LIST WITH ALL CHR IN GIVEN STR IN LOWERCASE           
+    for i in range(ord('a'),ord('z')+1): #********TO GENERATE a TO z ONE BY ONE*******#
+        if chr(i) not in k:              # CHECK IF EACH ONE IS IN OUR LIST OR NOT
+            return False
+    return True
+
+##### BEST #####
+import string
+
+def is_pangram(s):
+    s = s.lower()
+    for char in 'abcdefghijklmnopqrstuvwxyz':
+        if char not in s:
+            return False
+    return True
