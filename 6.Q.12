@@ -1,0 +1,11 @@
+def dig_pow(n, p):
+    s=[]
+    m=list(str(n))
+    j=p
+    for i in range(len(m)):
+        x=int(m[i])**j
+        s.append(x)
+        j+=1
+    if sum(s)%n==0:
+        return sum(s)//n
+    return -1
