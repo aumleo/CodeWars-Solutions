@@ -1,0 +1,22 @@
+def solution(s):
+    m=[]
+    n=list(s)
+    n.append('_')
+    
+    if len(s)%2==0:
+        for i in range(0,len(s)-1,2):
+            m.append(f"{s[i]}{s[i+1]}")
+    if len(s)%2!=0:
+        for i in range(0,len(n)-1,2):
+            m.append(f"{n[i]}{n[i+1]}")
+    return m
+
+
+##### BEST #####
+def solution(s):
+    result = []
+    if len(s) % 2:
+        s += '_'
+    for i in range(0, len(s), 2):
+        result.append(s[i:i+2])
+    return result
